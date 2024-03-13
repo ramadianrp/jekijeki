@@ -1,0 +1,262 @@
+/* Add your CSS styles here */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    height: 80px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+}
+
+.navbar img{
+    width: 80px;
+    height: 60px;
+    margin-left: 50px;
+}
+
+.nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+@media(max-width: 768px) {
+    .nav-wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width: 638px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
+
+.logo {
+    float: left;
+    margin-left: 28px;
+    font-size: 1.5em;
+    height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+    .logo {
+        /*margin-left: 5px; */
+    }
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* Menghapus bullet point */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+
+    display: inline-block;
+    list-style: none;
+    /* margin-right: 14px; */
+    margin-top: -2px;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+}
+
+@media(max-width: 640px) {
+    #navbar ul {
+        display: none;
+    }
+}
+
+@media(orientation: landscape) {
+    #navbar ul {
+        display: inline-block;
+    }
+}
+
+#navbarNav{
+    text-align: center;
+    justify-content: center;
+}
+
+
+.navbar li {
+    display: inline-block;
+    /* float: left; Membuat daftar menjadi horizontal */
+
+}
+
+.produk-home{
+    /* margin-bottom: 50px; */
+    padding-bottom: 100px;
+}
+
+.navbar li a {
+    /* display: block; /* Membuat tautan menjadi blok untuk memudahkan styling 
+    color: white; /* Warna teks 
+    text-align: center; /* Pusatkan teks 
+    padding: 14px 16px; /* Ruang di dalam tautan 
+    text-decoration: none; Menghapus garis bawah */
+
+    color: rgb(13, 26, 38);
+    display: block;
+    font-size: 13pt;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+/* Efek hover saat mouse di atas tautan */
+.navbar li a:hover {
+    /*background-color: #ddd; /* Warna latar belakang saat di hover 
+    color: rgb(236, 18, 18); Warna teks saat di hover*/
+
+    /* border-bottom: 1px solid rgb(28, 121, 184); */
+    color: rgb(28, 121, 184);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+header {
+    background-color: darkgray;
+    text-align: center;
+
+}
+
+header img {
+    height: 75px;
+}
+
+header span {
+    color: #ddd;
+}
+
+#jumbotron {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../header_1.jpg');
+    background-size: auto;
+    padding: 250px;
+    background-position: center;
+    color: aliceblue;
+    text-align: left;
+}
+
+.layanan-kami{
+    margin-bottom: 200px;
+}
+
+
+
+.insideJumbotron{
+    border: 5px solid transparent; 
+    padding: 100px;
+    border-radius: 5px;
+}
+
+#tentang-kami{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 200px;
+    margin: 100px;
+}
+
+#tentang-kami p{
+    font-size: 16pt;
+}
+
+#tentang-kami h2{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+/* height: 70vh; 
+
+    /* background-color: #333;
+    color: white;
+    padding: 1rem; 
+
+
+/* .container{
+    justify-content: center;
+} */
+
+.row{
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.row h3{
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ddd;
+    position: absolute;
+    top: 25%;
+    /* text-align: center; */
+}
+
+.card {
+    /* margin-top: 10px; */
+    box-shadow: 0 2px 4px 0 rgba(198, 195, 195, 0.978);
+    transition: 0.3s;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 200px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+table {
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+td,
+th {
+    /* border: 10px solid #dddddd; */
+    text-align: center;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+.footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer-wa,
+#footer-mail,
+#footer-tengah {
+    margin: auto;
+}
