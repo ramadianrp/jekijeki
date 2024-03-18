@@ -97,12 +97,16 @@ body {
 }
 
 .container-breadcrumb {
-  margin : 10px;
+  margin-left : 23px;
   padding-top : 5px;
 }
 
-#visimisi {
+#konten {
   margin: 10px;
+}
+
+.text-muted {
+    font-size: 25px;
 }
 
 .produk-home{
@@ -163,6 +167,18 @@ header span {
     background-position: center;
     color: aliceblue;
     text-align: left;
+    nav {
+        position: relative;
+        left: -195px;
+        top: -230px;
+        color: rgb(241, 186, 46); 
+    }   
+    .breadcrumb{
+        --bs-breadcrumb-divider-color: rgb(241, 186, 46);
+    }
+    .breadcrumb-item.active{
+        color: yellow;
+    }    
 }
 
 .layanan-kami{
@@ -255,13 +271,14 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-footer {
-    margin-bottom: 20px;
-}
-
 .footer{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.p-2{
+    position: relative;
+    bottom: 10px;
 }
 
 #footer-wa,
