@@ -1,99 +1,105 @@
 /* Add your CSS styles here */
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    text-align: center;
-    justify-content: center;
-    overflow: auto;
-    height: 80px;
-    line-height: 60px;
-    width: 100vw;
-    z-index: 10;
+header{
+    position: fixed; /*transparent background & dibesar-kecilin ttp posisinya */
+    background: darkgray;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 50px;
+    display: flex; /*satu header jadi sejajar & kecil gedein nyesuain ukuran container parents*/
+    justify-content: space-between; /*jarak antar item dalam header jadi sama*/
+    align-items: center;
 }
 
-.navbar img{
-    width: 80px;
+/*gambar latar*/
+header span {
+    color: #ddd;
+}
+
+header .logo{
+    width: 100;
+}
+
+header .logo img{
+    display: flex;
+    position: relative;
+    width: 65px;
     height: 60px;
-    margin-left: 50px;
 }
 
-.nav-wrapper {
-    margin: auto;
-    text-align: center;
-    width: 70%;
+header .menu-icon{
+    display: none;
+    font-size: 25px;
+}
+header .fa.fa-close{
+    display: none;
+    font-size: 27px;
 }
 
-@media(max-width: 768px) {
-    .nav-wrapper {
-        width: 90%;
-    }
+header nav{
+    position: relative;
+    left: 0;
 }
 
-@media(max-width: 638px) {
-    .nav-wrapper {
-        width: 100%;
-    }
-}
-
-.logo {
+header ul li {
+    position: relative;
+    display: flex;
     float: left;
-    margin-left: 28px;
-    font-size: 1.5em;
-    height: 30px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    list-style: none;   
 }
 
-@media(max-width: 768px) {
-    .logo {
-        /*margin-left: 5px; */
-    }
+header ul li a{
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
-.navbar ul {
-    list-style-type: none;
-    /* Menghapus bullet point */
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-
-    display: inline-block;
-    list-style: none;
-    /* margin-right: 14px; */
-    margin-top: -2px;
-    text-align: right;
-    transition: transform 0.5s ease-out;
-    -webkit-transition: transform 0.5s ease-out;
+header ul li a:hover{
+    text-decoration: underline;
+    color: rgb(249, 246, 246);
 }
 
-@media(max-width: 640px) {
-    #navbar ul {
+@media (max-width:900px){
+    header nav{
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        right: 0;
+        background-color: rgb(226, 223, 223);
         display: none;
     }
-}
-
-@media(orientation: landscape) {
-    #navbar ul {
-        display: inline-block;
+    header.active nav{
+        display: initial;
     }
-}
-
-#navbarNav{
-    text-align: center;
-    justify-content: center;
-}
-
-
-.navbar li {
-    display: inline-block;
-    /* float: left; Membuat daftar menjadi horizontal */
-
+    header nav ul{
+        padding: 0;
+    }
+    header nav ul li{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    header .menu-icon{
+        display: initial;
+    }
+    header.active .fa.fa-bars{
+        display: none;
+    }
+    header.active .fa.fa-close{
+        display: initial;
+    }
 }
 
 .container-breadcrumb {
@@ -102,7 +108,15 @@ body {
 }
 
 #konten {
-  margin: 10px;
+    padding: 15px 25px;
+}
+
+#konten-teks{
+    padding: 0;
+}
+
+#konten-gambar{
+    padding: 0;
 }
 
 .text-muted {
@@ -114,52 +128,6 @@ body {
     padding-bottom: 100px;
 }
 
-.navbar li a {
-    /* display: block; /* Membuat tautan menjadi blok untuk memudahkan styling 
-    color: white; /* Warna teks 
-    text-align: center; /* Pusatkan teks 
-    padding: 14px 16px; /* Ruang di dalam tautan 
-    text-decoration: none; Menghapus garis bawah */
-
-    color: rgb(13, 26, 38);
-    display: block;
-    font-size: 13pt;
-    height: 50px;
-    letter-spacing: 1px;
-    margin: 0 20px;
-    padding: 0 4px;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-}
-
-/* Efek hover saat mouse di atas tautan */
-.navbar li a:hover {
-    /*background-color: #ddd; /* Warna latar belakang saat di hover 
-    color: rgb(236, 18, 18); Warna teks saat di hover*/
-
-    /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: rgb(28, 121, 184);
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-}
-
-header {
-    background-color: darkgray;
-    text-align: center;
-
-}
-
-header img {
-    height: 75px;
-}
-
-header span {
-    color: #ddd;
-}
-
 #jumbotron {
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../header_1.jpg');
     background-size: auto;
@@ -167,36 +135,61 @@ header span {
     background-position: center;
     color: aliceblue;
     text-align: left;
-    nav {
-        position: relative;
-        left: -195px;
-        top: -230px;
-        color: rgb(241, 186, 46); 
-    }   
-    .breadcrumb{
-        --bs-breadcrumb-divider-color: rgb(241, 186, 46);
-    }
-    .breadcrumb-item.active{
-        color: yellow;
-    }    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.layanan-kami{
-    margin-bottom: 200px;
+nav .breadcrumb{
+    position: relative;
+    top: 90px;
+    /* display: flex; */
+    /* align-items: left; */
+    padding-left: 50px;
 }
 
+li.breadcrumb-item{
+    color: white;
+}
+nav .breadcrumb{
+    --bs-breadcrumb-divider-color: rgb(241, 186, 46);
 
+}
+.breadcrumb-item.active{
+    color: yellow;
+}    
 
 .insideJumbotron{
-    border: 5px solid transparent; 
-    padding: 100px;
-    border-radius: 5px;
+    display: block;
+    align-items: center;
+    min-width: 300px;
+}
+
+.insideJumbotron .jumbotron-p{
+    width: 100%;
+    margin: 0;
+}
+
+#layanan-kami #servis{
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 100% !important;
+}
+
+#layanan-kami a:hover{
+    color: rgb(188, 189, 184) !important;
+    text-decoration: none !important;
+    transform: scale(1.2);
+}
+
+#partners{
+    padding-bottom: 0 !important;
 }
 
 #tentang-kami{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    padding: 200px;
+    /* padding: 200px; */
     margin: 100px;
 }
 
@@ -210,18 +203,6 @@ header span {
     margin-bottom: 50px;
 }
 
-
-/* height: 70vh; 
-
-    /* background-color: #333;
-    color: white;
-    padding: 1rem; 
-
-
-/* .container{
-    justify-content: center;
-} */
-
 .row{
     justify-content: space-evenly;
     margin-top: 50px;
@@ -231,6 +212,10 @@ header span {
     margin-top: 50px;
     padding-top: 50px;
     text-align: center;
+}
+
+#card-4 {
+    display: none;
 }
 
 header h1 {
@@ -285,4 +270,9 @@ tr:nth-child(even) {
 #footer-mail,
 #footer-tengah {
     margin: auto;
+}
+
+#foto-kanan {
+    margin-right: 0px;
+    width: 500px;
 }

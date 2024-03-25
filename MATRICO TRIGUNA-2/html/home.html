@@ -9,6 +9,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>PT Matrico Triguna</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -24,62 +25,33 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- <header class="p-3 text-bg-dark">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <img src="../Logo-trans2.png" alt="logo matrico trans">
-            </a>
-
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Products</a></li>
+    <header>
+        <a class="logo" href="../html/home.html">
+            <img src="../Logo-trans2.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+                <li><a href="../html/services.html">Services</a></li>
+                <li><a href="#">Products</a></li>
             </ul>
+        </nav>
+        <div id='fa fa-bars' class="menu-icon">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-close"></i>
         </div>
-    </header> -->
-
-    <!-- Jumbotron -->
-    <!-- <div id='jumbotron' class="px-4 py-5">
-        <h1 class="display-5 fw-bold text-body-emphasis" style="color: white;">Centered hero</h1>
-        <div class="col-lg-6">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-          </div>
-        </div>
-    </div> -->
-
-    <!-- Call header -->
-    <div id="header"></div>
-
+    </header>
+    
     <div id="jumbotron">
         <div class="insideJumbotron">
             <h1>Centered Hero</h1>
-            <div>
                 <p class="jumbotron-p">Quickly design and customize responsive mobile-first sites with Vanilla, the
                     world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
                     grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            </div>
         </div>
     </div>
 
-
-
-    <!-- <header> -->
-    <!-- <img src='./header_1.jpg' alt="Matrico Triguna"> -->
-    <!-- <h1>CREATIVE AND ENTHUSIASTIC PEOPLE WITH WORLD WIDE EXPERIENCE IN THE INDUSTRIAL ENGINEERING FIELD.</h1>
-    </header> -->
-
-    <!-- <nav>
-        <ul>
-            <li><a href="#tentang-kami">Tentang Kami</a></li>
-            <li><a href="#produk-kami">Produk Kami</a></li>
-            <li><a href="#layanan-kami">Layanan Kami</a></li>
-            <li><a href="#afiliasi-kami">Afiliasi Kami</a></li>
-            <li><a href="#kantor-kami">Kantor Kami</a></li>
-        </ul>
-    </nav> -->
     <section id="tentang-kami">
         <h2>About Us</h2>
         <p>
@@ -124,20 +96,20 @@
                 </div>
             </a>
             <a href="#" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../pngwing.com (4).png');
-        background-size: 90%;
-        background-position: center; 
-        background-repeat: no-repeat;">
-                <div class="text-center text-white text-shadow-1"
-                    style="position: absolute; bottom: 5px; left: 0; right: 0;">
-                    <h3>Casting</h3>
-                </div>
+            background-size: 90%;
+            background-position: center; 
+            background-repeat: no-repeat;">
+                    <div class="text-center text-white text-shadow-1"
+                        style="position: absolute; bottom: 5px; left: 0; right: 0;">
+                        <h3>Casting</h3>
+                    </div>
             </a>
         </div>
     </div>
 
     <!-- layanan kami -->
-    <div class="layanan-kami">
-        <div class="container col-xxl-8 px-4 py-5">
+    
+        <div id='layanan-kami' class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img class="img-fluid" src="../desain.jpg" class="d-block mx-lg-auto img-fluid"
@@ -150,7 +122,7 @@
                         hydraulic system used on
                         today's on marine, mining, and automotive industries.
                     </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <div id='servis' class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a href="#" class="fs-2 text-body-emphasis">Design</a>
                         <a href="#" class="fs-2 text-body-emphasis">Manufacture</a>
                         <a href="#" class="fs-2 text-body-emphasis">Repair</a>
@@ -158,9 +130,9 @@
                 </div>
             </div>
         </div>
-    </div>
+
     <!-- partners kami  -->
-    <div class="p-5 text-center bg-body-tertiary" style="margin-bottom: 100px;">
+    <div class="p-5 text-center bg-body-tertiary" id="partners">
         <div class="container py-5">
             <h1 class="text-body-emphasis" style="font-weight: bold;">Our Partners</h1>
             <div class="row mb-3 text-center">
@@ -176,5 +148,11 @@
     <!--Call footer-->
     <div id="footer"></div>
 </body>
-
+<script>
+    let menuIcon = document.querySelector('.menu-icon');
+    let header = document.querySelector('header');
+    menuIcon.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
 </html>
