@@ -37,9 +37,13 @@ header .menu-icon{
     display: none;
     font-size: 25px;
 }
+header .fa.fa.fa-bars{
+    cursor: pointer;
+}
 header .fa.fa-close{
     display: none;
     font-size: 27px;
+    cursor: pointer;
 }
 
 header nav{
@@ -100,11 +104,6 @@ header ul li a:hover{
     header.active .fa.fa-close{
         display: initial;
     }
-}
-
-.container-breadcrumb {
-  margin-left : 23px;
-  padding-top : 5px;
 }
 
 #konten {
@@ -180,6 +179,31 @@ nav .breadcrumb{
     color: rgb(188, 189, 184) !important;
     text-decoration: none !important;
     transform: scale(1.2);
+}
+
+.logo-partners{
+    background: rgb(184, 183, 183);
+    padding: 0 45px;
+    overflow: scroll;
+    position: relative;
+}
+
+.logo-partners::before, .logo-partners::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 150px;
+    content: '';
+    background: linear-gradient(to left,rgb(255, 255, 255, 0), whitesmoke);
+}
+
+.logo-slide{
+    white-space: nowrap;
+}
+
+.logo-slide img{
+    margin: 0 25px;
 }
 
 #partners{
