@@ -4,10 +4,13 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
-    position: fixed; /*transparent background & dibesar-kecilin ttp posisinya */
+    position: -webkit-sticky;
+    position: sticky; /*transparent background & dibesar-kecilin ttp posisinya*/
+    top: 0;
     background: darkgray;
     width: 100%;
     min-height: 75px;
@@ -15,6 +18,7 @@ header{
     display: flex; /*satu header jadi sejajar & kecil gedein nyesuain ukuran container parents*/
     justify-content: space-between; /*jarak antar item dalam header jadi sama*/
     align-items: center;
+    z-index: 1;
 }
 
 /*gambar latar*/
@@ -128,15 +132,29 @@ header ul li a:hover{
 }
 
 #jumbotron {
+    min-height: 900px;
+    max-width: 100%;
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../header_1.jpg');
-    background-size: auto;
-    padding: 250px;
+    /* background-size: auto; */
+    /* padding: 250px; */
     background-position: center;
     color: aliceblue;
     text-align: left;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.insideJumbotron{
+    /* display: block; */
+    align-items: center;
+    min-width: 300px;
+    margin: 0 250px;
+}
+
+.insideJumbotron .jumbotron-p{
+    width: 100%;
+    margin: 0;
 }
 
 nav .breadcrumb{
@@ -152,22 +170,10 @@ li.breadcrumb-item{
 }
 nav .breadcrumb{
     --bs-breadcrumb-divider-color: rgb(241, 186, 46);
-
 }
 .breadcrumb-item.active{
     color: yellow;
 }    
-
-.insideJumbotron{
-    display: block;
-    align-items: center;
-    min-width: 300px;
-}
-
-.insideJumbotron .jumbotron-p{
-    width: 100%;
-    margin: 0;
-}
 
 #layanan-kami #servis{
     display: flex !important;
@@ -181,14 +187,24 @@ nav .breadcrumb{
     transform: scale(1.2);
 }
 
-.logo-partners{
-    background: rgb(184, 183, 183);
-    padding: 0 45px;
-    overflow: scroll;
-    position: relative;
+#partners{
+    display: block;
+    /* margin: auto; */
+    padding: 50px 0 50px 0 !important;
 }
 
-.logo-partners::before, .logo-partners::after{
+#our-partner{
+    width: 100%;
+    padding: 0 0 0 0 !important;
+    margin-bottom: 35px;
+}
+
+.logo-partners{
+    padding: 0 45px;
+    overflow: scroll;
+}
+
+/* .logo-partners::before, .logo-partners::after{
     position: absolute;
     top: 0;
     left: 0;
@@ -196,18 +212,16 @@ nav .breadcrumb{
     height: 150px;
     content: '';
     background: linear-gradient(to left,rgb(255, 255, 255, 0), whitesmoke);
-}
+} */
 
 .logo-slide{
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .logo-slide img{
     margin: 0 25px;
-}
-
-#partners{
-    padding-bottom: 0 !important;
 }
 
 #tentang-kami{
@@ -299,4 +313,47 @@ tr:nth-child(even) {
 #foto-kanan {
     margin-right: 0px;
     width: 500px;
+}
+.produk-container{
+    display: flexbox;
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.produk-container h1{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    padding: 10px 0 25px 0;
+}
+
+.list-produk{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: auto;
+    align-items: center;
+}
+
+.list-produk .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 75%;
+}
+
+.list-produk img{
+    width: 80%;
+    filter: drop-shadow(0 50px 20px #0009)
+}
+
+.list-produk .deskripsi-produk{
+    word-wrap: break-word;
+}
+
+.item a{
+    text-decoration: none;
+    color: unset;
 }
