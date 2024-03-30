@@ -149,7 +149,7 @@ header ul li a:hover{
     width: 75%;
     min-width: 300px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .insideJumbotron .jumbotron-p{
@@ -166,12 +166,22 @@ nav .breadcrumb{
 li.breadcrumb-item{
     color: white;
 }
+
+li.breadcrumb-item#detail{
+    color: gray;
+}
+
 nav .breadcrumb{
     --bs-breadcrumb-divider-color: rgb(241, 186, 46);
 }
+
 .breadcrumb-item.active{
     color: yellow;
-}    
+}  
+
+.breadcrumb-item#detail.active{
+    color: rgb(220, 191, 191);
+}  
 
 #layanan-kami #servis{
     display: flex !important;
@@ -340,7 +350,13 @@ tr:nth-child(even) {
     padding: 20px;
     border-radius: 20px;
     width: 40%;
+    /* max-width: 472px;
+    max-height: 432px; */
     margin: auto;
+}
+
+.list-produk .item:hover{
+    background-color: rgb(163, 160, 160);
 }
 .list-produk img{
     width: 80%;
@@ -356,6 +372,10 @@ tr:nth-child(even) {
     color: unset;
 }
 
+.item a:hover{
+    color: whitesmoke;
+}
+
 .detail .deskripsi-produk{
     display: flex;
     flex-wrap: wrap;
@@ -365,8 +385,12 @@ tr:nth-child(even) {
 }
 
 .detail .deskripsi-produk .deskripsi{
+    h2{
+        text-align: center;
+    }
     padding: 0 30px;
-    text-align: center;
+    text-align: justify;
+    width: 60%;
 }
 
 .detail .deskripsi-produk .deskripsi i{
@@ -376,6 +400,10 @@ tr:nth-child(even) {
 .detail img{
     width: 300px;
     height: 300px;
+}
+
+.detail .deskripsi-produk img:hover{
+    transform: scale(1.2) rotate(20deg);
 }
 
 .produk-lain{
