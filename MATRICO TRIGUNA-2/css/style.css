@@ -138,21 +138,18 @@ header ul li a:hover{
     min-height: 900px;
     max-width: 100%;
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../header_1.jpg');
-    /* background-size: auto; */
-    /* padding: 250px; */
     background-position: center;
     color: aliceblue;
     text-align: left;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .insideJumbotron{
-    /* display: block; */
-    align-items: center;
+    width: 75%;
     min-width: 300px;
-    margin: 0 250px;
+    margin: auto;
+    text-align: center;
 }
 
 .insideJumbotron .jumbotron-p{
@@ -162,10 +159,8 @@ header ul li a:hover{
 
 nav .breadcrumb{
     position: relative;
-    top: 90px;
-    /* display: flex; */
-    /* align-items: left; */
-    padding-left: 50px;
+    top: 10px;
+    left: 50px;
 }
 
 li.breadcrumb-item{
@@ -206,16 +201,6 @@ nav .breadcrumb{
     padding: 0 45px;
     overflow: scroll;
 }
-
-/* .logo-partners::before, .logo-partners::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 75px;
-    height: 150px;
-    content: '';
-    background: linear-gradient(to left,rgb(255, 255, 255, 0), whitesmoke);
-} */
 
 .logo-slide{
     white-space: nowrap;
@@ -373,16 +358,21 @@ tr:nth-child(even) {
 
 .detail .deskripsi-produk{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    /* align-items: center; */
+    padding: 30px 30px;
     justify-content: center;
 }
 
 .detail .deskripsi-produk .deskripsi{
-    padding: 0 25px;
+    padding: 0 30px;
     text-align: center;
-    /* word-wrap: break-word; */
 }
+
+.detail .deskripsi-produk .deskripsi i{
+    width: 100%;
+}
+
 .detail img{
     width: 300px;
     height: 300px;
@@ -395,21 +385,34 @@ tr:nth-child(even) {
 
 .list-produk-detail {
     display: flex;
+    flex-wrap: wrap;
     margin: 20px 30px;
+    justify-content: center;
+    gap: 35px 20px;
 }
 
 .list-produk-detail .item{
     background-color: #eeeee6;
     padding: 20px;
     border-radius: 20px;
-    width: 20%;
-    margin: auto;
+    width: 30%;
+    min-width: 400px;
 }
 
 .list-produk-detail .item img{
-    width: 100%;
+    width: 80%;
 }
 
 .list-produk-detail .item p{
     word-wrap: break-word;
+}
+
+.deskripsi-produk .deskripsi i{
+    margin: auto;
+    text-align: left;
+}
+
+.deskripsi-produk .deskripsi i span{
+    padding: 0 5px;
+    font-weight: lighter;
 }
