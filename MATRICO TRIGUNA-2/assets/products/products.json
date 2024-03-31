@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "name": "Refractories Anchors",
+        "image": "../assets/img/refakcor Background Removed.png",
+        "deskripsi_singkat": "Refractory Anchors specializes in the manufacture of high temperature alloy and stainless fasteners used to anchor refractories in furnaces and process equipment",
+        "deskripsi": "Refractory Anchors specializes in the manufacture of high temperature alloy and stainless fasteners used to anchor refractories in furnaces and process equipment. Refractory anchor hardware is wire formed, die stamped, and roll threaded and welded into a variety of anchoring products for castable monolithic, abrasion resistant and ceramic fiber refractory linings.",
+        "jenis" : ""
+
+    },
+    {
+        "id": "2",
+        "name": "Hydraulic Parts",
+        "image": "../assets/img/hydraulics Background Removed.png",
+        "deskripsi_singkat": "We supply genuine spare parts and components of high quality hydraulic equipment manufacturers such as Brevini and Samydraulik",
+        "deskripsi": "We supply genuine spare parts and components of high quality hydraulic equipment manufacturers such as Brevini and Samydraulik",
+        "jenis" : ["Eaton Hansen 3H21 female","Eaton Hansen 3K21 male"]
+    },
+    {
+        "id": "3",
+        "name": "Customize Casting Parts",
+        "image": "../assets/img/castpart Background Removed.png",
+        "deskripsi_singkat": "Refractory Anchors specializes in the manufacture of high temperature alloy and stainless fasteners used to anchor refractories in furnaces and process equipment",
+        "deskripsi": "From cast iron to steel casting to aluminum cast, we delivers high-quality industrial casting parts for technical equipment used in special machinery within the automation industry",
+        "jenis" : ""
+
+    },
+    {
+        "id": "4",
+        "name": "Industrial De Dusting",
+        "image": "../assets/img/filterdust Background Removed.png",
+        "deskripsi_singkat": "Refractory Anchors specializes in the manufacture of high temperature alloy and stainless fasteners used to anchor refractories in furnaces and process equipment",
+        "deskripsi": "We offers a wide range of bag and sleeve filters adjusted to high or small capacities. This limited sized range provides a multi-use system to be used for machines or units dusting",
+        "jenis" : ["Donaldson P562260","Donaldson P566212","Donaldson P566406","Donaldson P566983","930119Q Parker"]
+
+    }
+]

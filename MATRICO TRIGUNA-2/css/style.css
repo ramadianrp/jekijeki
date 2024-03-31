@@ -149,7 +149,7 @@ header ul li a:hover {
 #jumbotron {
     min-height: 900px;
     max-width: 100%;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../header_1.jpg');
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/img/header_1.jpg');
     background-position: center;
     color: aliceblue;
     text-align: left;
@@ -224,7 +224,6 @@ nav .breadcrumb{
 }
 
 .logo-partners {
-    padding: 0 45px;
     overflow: scroll;
 }
 
@@ -371,7 +370,8 @@ tr:nth-child(even) {
     background-color: darkgrey;
     padding: 20px;
     border-radius: 20px;
-    width: 40%;
+    width: 492px;
+    height: 400px;
     /* max-width: 472px;
     max-height: 432px; */
     margin: auto;
@@ -383,6 +383,15 @@ tr:nth-child(even) {
 .list-produk img{
     width: 80%;
     filter: drop-shadow(0 50px 20px #0009)
+}
+.list-produk img#hidrolik{
+    width: 55%;
+}
+.list-produk img#casting{
+    width: 90%;
+}
+.list-produk img#dusting{
+    width: 75%;
 }
 
 .list-produk .deskripsi-produk {
@@ -412,7 +421,7 @@ tr:nth-child(even) {
     }
     padding: 0 30px;
     text-align: justify;
-    width: 60%;
+    width: 70%;
 }
 
 .detail .deskripsi-produk .deskripsi i{
@@ -449,6 +458,10 @@ tr:nth-child(even) {
     min-width: 400px;
 }
 
+.list-produk-detail .item:hover{
+    background-color: rgb(163, 160, 160);
+}
+
 .list-produk-detail .item img{
     width: 80%;
 }
@@ -466,3 +479,33 @@ tr:nth-child(even) {
     padding: 0 5px;
     font-weight: lighter;
 }
+
+.deskripsi-produk .deskripsi i:hover span{
+   color: rgba(202, 200, 200, 0.745);
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.spek-detail, .spek-detailParker, .spek-detailP562260, .spek-detailP566212, .spek-detailP566983,
+.spek-detail3H21, .spek-detail3K21, .spek-detaillocknut, .spek-detaillockwasher, .spek-detailcapscrew{
+    display: none;
+}
+
+.spek-detail.active, .spek-detailParker.active, .spek-detailP562260.active, 
+.spek-detailP566212.active, .spek-detailP566983.active,
+.spek-detail3H21.active, .spek-detail3K21.active, .spek-detaillocknut.active, .spek-detaillockwasher.active, .spek-detailcapscrew.active{
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    width: 100%;
+    span{
+        padding: 0 10px;
+        font-style: italic;
+        font-size: 23px;
+        font-weight: lighter;
+    }
+    table td{
+        background-color: white;
+    }
+}
+
