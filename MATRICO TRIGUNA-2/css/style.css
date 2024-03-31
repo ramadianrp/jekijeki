@@ -7,16 +7,19 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     position: -webkit-sticky;
-    position: sticky; /*transparent background & dibesar-kecilin ttp posisinya*/
+    position: sticky;
+    /*transparent background & dibesar-kecilin ttp posisinya*/
     top: 0;
     background: darkgray;
     width: 100%;
     min-height: 75px;
     padding: 0 50px;
-    display: flex; /*satu header jadi sejajar & kecil gedein nyesuain ukuran container parents*/
-    justify-content: space-between; /*jarak antar item dalam header jadi sama*/
+    display: flex;
+    /*satu header jadi sejajar & kecil gedein nyesuain ukuran container parents*/
+    justify-content: space-between;
+    /*jarak antar item dalam header jadi sama*/
     align-items: center;
     z-index: 1;
 }
@@ -26,31 +29,33 @@ header span {
     color: #ddd;
 }
 
-header .logo{
+header .logo {
     width: 100;
 }
 
-header .logo img{
+header .logo img {
     display: flex;
     position: relative;
     width: 65px;
     height: 60px;
 }
 
-header .menu-icon{
+header .menu-icon {
     display: none;
     font-size: 25px;
 }
-header .fa.fa.fa-bars{
+
+header .fa.fa.fa-bars {
     cursor: pointer;
 }
-header .fa.fa-close{
+
+header .fa.fa-close {
     display: none;
     font-size: 27px;
     cursor: pointer;
 }
 
-header nav{
+header nav {
     position: relative;
     left: 0;
 }
@@ -59,10 +64,10 @@ header ul li {
     position: relative;
     display: flex;
     float: left;
-    list-style: none;   
+    list-style: none;
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
     padding: 10px;
     display: flex;
@@ -72,13 +77,13 @@ header ul li a{
     font-size: 20px;
 }
 
-header ul li a:hover{
+header ul li a:hover {
     text-decoration: underline;
     color: rgb(249, 246, 246);
 }
 
-@media (max-width:900px){
-    header nav{
+@media (max-width:900px) {
+    header nav {
         position: absolute;
         top: 75px;
         width: 100%;
@@ -86,28 +91,35 @@ header ul li a:hover{
         background-color: rgb(226, 223, 223);
         display: none;
     }
-    header.active nav{
+
+    header.active nav {
         display: initial;
     }
-    header nav ul{
+
+    header nav ul {
         padding: 0;
     }
-    header nav ul li{
+
+    header nav ul li {
         width: 100%;
         position: relative;
         align-items: center;
         display: flex;
         justify-content: center;
     }
-    header .menu-icon{
+
+    header .menu-icon {
         display: initial;
     }
-    header.active .fa.fa-bars{
+
+    header.active .fa.fa-bars {
         display: none;
     }
-    header.active .fa.fa-close{
+
+    header.active .fa.fa-close {
         display: initial;
     }
+
     .list-produk {
         grid-template-columns: auto;
     }
@@ -117,11 +129,11 @@ header ul li a:hover{
     padding: 15px 25px;
 }
 
-#konten-teks{
+#konten-teks {
     padding: 0;
 }
 
-#konten-gambar{
+#konten-gambar {
     padding: 0;
 }
 
@@ -129,7 +141,7 @@ header ul li a:hover{
     font-size: 25px;
 }
 
-.produk-home{
+.produk-home {
     /* margin-bottom: 50px; */
     padding-bottom: 100px;
 }
@@ -152,18 +164,18 @@ header ul li a:hover{
     text-align: left;
 }
 
-.insideJumbotron .jumbotron-p{
+.insideJumbotron .jumbotron-p {
     width: 100%;
     margin: 0;
 }
 
-nav .breadcrumb{
+nav .breadcrumb {
     position: relative;
     top: 10px;
     left: 50px;
 }
 
-li.breadcrumb-item{
+li.breadcrumb-item {
     color: white;
 }
 
@@ -183,31 +195,35 @@ nav .breadcrumb{
     color: rgb(220, 191, 191);
 }  
 
-#layanan-kami #servis{
+.breadcrumb-item.active {
+    color: yellow;
+}
+
+#layanan-kami #servis {
     display: flex !important;
     justify-content: space-around !important;
     width: 100% !important;
 }
 
-#layanan-kami a:hover{
+#layanan-kami a:hover {
     color: rgb(188, 189, 184) !important;
     text-decoration: none !important;
     transform: scale(1.2);
 }
 
-#partners{
+#partners {
     display: block;
     /* margin: auto; */
     padding: 50px 0 50px 0 !important;
 }
 
-#our-partner{
+#our-partner {
     width: 100%;
     padding: 0 0 0 0 !important;
     margin-bottom: 35px;
 }
 
-.logo-partners{
+.logo-partners {
     overflow: scroll;
 }
 
@@ -217,33 +233,33 @@ nav .breadcrumb{
     align-items: center;
 }
 
-.logo-slide img{
+.logo-slide img {
     margin: 0 25px;
 }
 
-#tentang-kami{
+#tentang-kami {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     /* padding: 200px; */
     margin: 100px;
 }
 
-#tentang-kami p{
+#tentang-kami p {
     font-size: 16pt;
 }
 
-#tentang-kami h2{
+#tentang-kami h2 {
     text-align: center;
     font-weight: bold;
     margin-bottom: 50px;
 }
 
-.row{
+.row {
     justify-content: space-evenly;
     margin-top: 50px;
 }
 
-.row h3{
+.row h3 {
     margin-top: 50px;
     padding-top: 50px;
     text-align: center;
@@ -291,12 +307,13 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-.footer{
+.footer {
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: darkgray;
 }
 
-.p-2{
+.p-2 {
     position: relative;
     bottom: 10px;
 }
@@ -313,39 +330,44 @@ tr:nth-child(even) {
 }
 
 @media screen and (max-width: 990px) {
-    .list-produk{
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 40px;
-      /* width: 100%; */
+    .list-produk {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 40px;
+        /* width: 100%; */
     }
-    .list-produk .item{
+
+    .list-produk .item {
         width: 100%;
     }
-  }
+}
 
-.produk-container{
+.produk-container {
     display: flex;
     flex-direction: column;
     max-width: 75%;
     margin: auto;
     text-align: center;
     align-items: center;
+    margin-top: 40px;
 }
 
-.produk-container h1{
+.produk-container h1 {
     width: 100%;
     padding: 10px 0 25px 0;
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: narrower;
 }
 
-.list-produk{
+.list-produk {
     display: flex;
     gap: 50px 20px;
     padding: 0 0 50px 0;
 }
 
-.list-produk .item{
-    background-color: #eeeee6;
+.list-produk .item {
+    background-color: darkgrey;
     padding: 20px;
     border-radius: 20px;
     width: 492px;
@@ -372,11 +394,11 @@ tr:nth-child(even) {
     width: 75%;
 }
 
-.list-produk .deskripsi-produk{
+.list-produk .deskripsi-produk {
     word-wrap: break-word;
 }
 
-.item a{
+.item a {
     text-decoration: none;
     color: unset;
 }
@@ -428,7 +450,7 @@ tr:nth-child(even) {
     gap: 35px 20px;
 }
 
-.list-produk-detail .item{
+.list-produk-detail .item {
     background-color: #eeeee6;
     padding: 20px;
     border-radius: 20px;
@@ -444,7 +466,7 @@ tr:nth-child(even) {
     width: 80%;
 }
 
-.list-produk-detail .item p{
+.list-produk-detail .item p {
     word-wrap: break-word;
 }
 
