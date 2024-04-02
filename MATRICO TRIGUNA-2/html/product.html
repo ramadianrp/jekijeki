@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +13,18 @@
 
     <title>PT Matrico Triguna</title>
     <link rel="stylesheet" href="../css/style.css">
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-        crossorigin="anonymous">
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
     <script>
-        $(function() {
+        $(function () {
             $('#header').load('header.html');
             $('#footer').load('footer.html');
         })
     </script>
 </head>
+
 <body>
     <header>
         <a class="logo" href="../html/home.html">
@@ -96,16 +98,18 @@
                     This limited sized range provides a multi-use system to be used for machines or units dusting</div>
             </div>
         </div>
+        <p> Not looking what you need? Contact us for more information!</p>
     </div>
 
     <div id="footer"></div>
-    
+
 </body>
 <script>
     let menuIcon = document.querySelector('.menu-icon');
     let header = document.querySelector('header');
-    menuIcon.onclick = function(){
+    menuIcon.onclick = function () {
         header.classList.toggle('active');
     }
 </script>
+
 </html>
