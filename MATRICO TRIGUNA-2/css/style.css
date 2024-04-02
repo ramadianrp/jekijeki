@@ -118,11 +118,16 @@ header ul li a:hover{
 }
 
 #konten-teks{
-    padding: 0;
+    padding: 0 15px 0 0;
 }
 
 #konten-gambar{
-    padding: 0;
+    padding: 0 15px 0 0;
+}
+
+#konten #konten-gambar img{
+    width: 550px;
+    height: 500px;
 }
 
 .text-muted {
